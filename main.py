@@ -4,6 +4,15 @@ import random
 
 pygame.init()
 
+# --- TRILHA SONORA ---
+pygame.mixer.init()
+try:
+    pygame.mixer.music.load('assets/trilha_sonora.mp3')  # Troque pelo nome do seu arquivo de áudio
+    pygame.mixer.music.set_volume(0.3)  # Volume de 0.0 a 1.0 (opcional)
+    pygame.mixer.music.play(-1)  # -1 faz a música repetir sempre
+except pygame.error:
+    print("Erro ao carregar a trilha sonora.")
+
 LARGURA = 1000
 ALTURA = 700
 
@@ -298,7 +307,9 @@ while True:
             # Pausar/despausar com espaço
             if evento.key == pygame.K_SPACE:
                 pausado = True
+                pygame.mixer.music.pause()  # Pausa a trilha sonora ao pausar o jogo
                 tela_pausa()
+                pygame.mixer.music.unpause()  # Retoma a trilha sonora ao despausar
                 pausado = False
         if evento.type == pygame.KEYDOWN and not pausado:
             if evento.key == pygame.K_z:
