@@ -43,3 +43,12 @@ Ao derrotar o chefão, aparece a tela final com um agradecimento do Caneco.
 Para rodar o jogo corretamente, é necessário:
 
 ✅ Bibliotecas
+import os, time
+import pygame
+import sys
+import random
+import datetime
+import os
+import speech_recognition as sr
+import pyttsx3
+from basicos import pulsar_sol
