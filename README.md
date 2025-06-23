@@ -1,3 +1,6 @@
+JOGO DESENVOLVIDO POR: RAFAEL RECH DA SILVA
+RA: 1137955
+
 🎮 Descrição do Projeto - CupNerd
 📌 Funcionalidades do Código
 O jogo CupNerd é uma aventura espacial onde o jogador assume o papel de Xicrinho, que precisa salvar seu irmão Caneco, capturado pela vilã Lunar. O jogo possui:
